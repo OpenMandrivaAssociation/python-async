@@ -1,4 +1,5 @@
 %define upstream_name async
+%define debug_package %{nil}
 
 Name: 		python-%{upstream_name}
 Version: 	0.6.1
@@ -14,7 +15,7 @@ BuildRequires:  python-distribute
 Async is a framework to process interdependent tasks in a pool of workers.
 
 %prep
-%setup -q -n %upstream_name-%version
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 python setup.py build
@@ -24,12 +25,5 @@ python setup.py install --root=%{buildroot}
 
 %files
 %doc AUTHORS README
-%{python_sitearch}/async
-%{python_sitearch}/async-%{version}-py%{py_ver}.egg-info
-
-
-%changelog
-* Mon Jun 27 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.6.1-1mdv2011.0
-+ Revision: 687479
-- import python-async
-
+%{py_platsitedir}/async
+%{py_platsitedir}/async-%{version}-py%{py_ver}.egg-info
