@@ -3,7 +3,7 @@
 
 Name: 		python-%{upstream_name}
 Version: 	0.6.1
-Release: 	2
+Release: 	3
 Summary: 	Async Framework
 License:	BSD
 Group: 		Development/Python
