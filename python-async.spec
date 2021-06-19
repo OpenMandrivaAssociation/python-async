@@ -2,8 +2,8 @@
 %define debug_package %{nil}
 
 Name: 		python-%{upstream_name}
-Version: 	0.6.1
-Release: 	3
+Version: 	0.6.2
+Release: 	1
 Summary: 	Async Framework
 License:	BSD
 Group: 		Development/Python
@@ -24,6 +24,6 @@ python setup.py build
 python setup.py install --root=%{buildroot}
 
 %files
-%doc AUTHORS README
-%{py_platsitedir}/async
-%{py_platsitedir}/async-%{version}-py%{py_ver}.egg-info
+%doc AUTHORS
+%{python3_sitelib}/async
+%{python3_sitelib}/async-%{version}-py%{py_ver}.egg-info
