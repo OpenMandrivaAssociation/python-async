@@ -7,7 +7,7 @@ Release: 	1
 Summary: 	Async Framework
 License:	BSD
 Group: 		Development/Python
-Url: 		http://pypi.python.org/pypi/async
+Url: 		https://pypi.python.org/pypi/async
 Source0: 	http://pypi.python.org/packages/source/a/async/async-%{version}.tar.gz
 BuildRequires:  python-distribute
 
